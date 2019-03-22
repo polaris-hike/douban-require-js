@@ -42,7 +42,7 @@ define(['helper','jquery'],function(Helpers, $){
       this.isLoading = true
       this.$container.find('.loading').show(400)
       $.ajax({
-        url: 'http://api.douban.com/v2/movie/us_box',
+        url: 'https://api.douban.com/v2/movie/us_box',
         data: {
           start: this.count*this.page,
           count: this.count

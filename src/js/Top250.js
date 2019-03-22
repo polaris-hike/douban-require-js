@@ -43,7 +43,7 @@ define(['helper','jquery'],function(Helpers,$){
       this.isLoading = true
       this.$container.find('.loading').show(400)
       $.ajax({
-        url: 'http://api.douban.com/v2/movie/top250',
+        url: 'https://api.douban.com/v2/movie/top250',
         data: {
           start: this.count*this.page,
           count: this.count

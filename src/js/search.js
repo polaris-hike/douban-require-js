@@ -47,7 +47,7 @@ define(['jquery','helper'],function($,Helpers){
       var keyword = this.$container.find('.search-area input').val()
       this.isLoading = true
       $.ajax({
-        url: 'http://api.douban.com/v2/movie/search',
+        url: 'https://api.douban.com/v2/movie/search',
         data: {
           q: keyword
         },
